@@ -4,16 +4,17 @@
   "description": "[![Actions Status](https://github.com/Alaiv/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Alaiv/frontend-project-44/actions)",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alaiv/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Aleksandr Kudruavtsev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alaiv/frontend-project-44/issues"
@@ -27,6 +28,8 @@
     "eslint": "^8.24.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.0.4"
+    "eslint-plugin-jest": "^27.0.4",
+    "jest": "^29.0.3",
+    "jest-cli": "^29.0.3"
   }
 }
