@@ -5,18 +5,18 @@ import getRandomNumber from '../src/randomNumber.js';
 const calc = () => {
   const operations = ['*', '+', '-'];
   const randomOperation = getRandomNumber(0, 2);
-  const randomNumbers = [getRandomNumber(1, 25), getRandomNumber(3, 10)];
+  const [firstNum, secondNum] = [getRandomNumber(1, 25), getRandomNumber(3, 10)];
   const operation = operations[randomOperation];
 
-  console.log(`Question: ${randomNumbers[0]} ${operation} ${randomNumbers[1]}`);
+  console.log(`Question: ${firstNum} ${operation} ${secondNum}`);
 
   switch (operations[randomOperation]) {
     case '*':
-      return `${randomNumbers[0] * randomNumbers[1]}`;
+      return `${firstNum * secondNum}`;
     case '+':
-      return `${randomNumbers[0] + randomNumbers[1]}`;
+      return `${firstNum + secondNum}`;
     case '-':
-      return `${randomNumbers[0] - randomNumbers[1]}`;
+      return `${firstNum - secondNum}`;
     default:
       return 'Something went wrong';
   }
