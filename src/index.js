@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import userName from '../bin/welcome.js';
+import userName from './welcome.js';
 
 const checkAnswer = (answer, correctAnswer, name) => {
   if (answer === correctAnswer) {
