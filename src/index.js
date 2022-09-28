@@ -20,7 +20,7 @@ const engine = (startGame, message) => {
 
   for (let i = 0; i <= winCondition; i += 1) {
     if (i === winCondition) {
-      console.log(`Congratulations, ${name}`);
+      console.log(`Congratulations, ${name}!`);
     } else {
       correctAnswer = startGame();
       const answer = readlineSync.question('Your answer: ');
