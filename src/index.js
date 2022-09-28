@@ -16,13 +16,11 @@ const checkAnswer = (answer, correctAnswer, name) => {
 const engine = (startGame, message) => {
   const name = userName(message);
   const winCondition = 3;
-  let correctAnswer = '';
-
   for (let i = 0; i <= winCondition; i += 1) {
     if (i === winCondition) {
       console.log(`Congratulations, ${name}!`);
     } else {
-      correctAnswer = startGame();
+      const correctAnswer = startGame();
       const answer = readlineSync.question('Your answer: ');
       if (!checkAnswer(answer, correctAnswer, name)) {
         return false;
